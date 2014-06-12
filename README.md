@@ -8,6 +8,7 @@ This proxy is my attempt at trying to replace the proxy in BurpSuite. Personally
 How to Use
 ----------
 Go into the project directory and run the proxpy script with the following command:
+
     ./proxpy.py -x plugins/textedit.py
 
 Then connect to the proxy on localhost:8080 (this varies by browser, google how to do it). Then try to go to a website and return to the terminal. An instance of your editor of choice (selected by the $EDITOR environment variable) should be up with the data of the HTTP request for you to edit. Make any changes you want (or just leave it to pass the request on unchanged) and save/quit. Once the editor exits, the proxy will send your modified request to the server and wait for another request.
